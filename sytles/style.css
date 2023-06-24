@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #303030;
+}
 :root {
   --font: "Roboto", sans-serif;
-  --color: #76b8e9;
+  --color: #7fc9ff;
 }
 .main {
   height: 100vh;
@@ -14,7 +17,7 @@
 }
 .main .header-part {
   width: 100%;
-  height: 80%;
+  height: 76.1vh;
   background: linear-gradient(145deg, #0d47a1, #1976d2);
   transform: skewY(8deg);
   transform-origin: 100%;
@@ -23,7 +26,7 @@
 .main .nav-bar {
   width: 100%;
   height: 64px;
-  background: linear-gradient(right, #0d47a1, #1976d2);
+  /* background: linear-gradient(right, #0d47a1, #1976d2); */
   position: absolute;
   top: 0;
   left: 0;
@@ -36,14 +39,17 @@
   width: 430px;
   align-items: center;
   justify-content: space-between;
+  /* background: red; */
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 .main .nav-bar .links {
   height: 100%;
-  width: 400px;
+  width: 378px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background: #fff; */
+  /* background: lightblue; */
 }
 .main .nav-bar .logo_section img {
   height: 40px;
@@ -61,6 +67,9 @@
   display: flex;
   align-items: center;
   font-weight: 400;
+  /* background-color: red; */
+  margin-left: 12px;
+  margin-top: 4px;
 }
 .main .nav-bar .logo_section a span {
   font-size: 18px;
@@ -78,7 +87,6 @@
 .main .nav-bar .links .inp {
   width: 180px;
   height: 32;
-  border: 1px solid rgb(155, 150, 150);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -100,21 +108,22 @@
   color: rgb(108, 102, 102);
 }
 .main .nav-bar .links .inp span {
-  margin-right: 20px;
+  margin-right: 18px;
   width: 22px;
   height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
-  font-weight: 800;
-  border: 1.5px solid grey;
+  font-weight: 900;
+  color: #6e6e6e;
+  border: 1.5px solid #6e6e6e;
 }
 .main .nav-bar .links .icons {
   /* background: red; */
   min-width: 130px;
   padding: 2px;
-  margin-right: 30px;
+  margin-right: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,32 +136,35 @@
   border: none;
   cursor: pointer;
   color: #fff;
-  width: 40px;
+  width: 35px;
   /* background: red; */
-  padding-right: 15px;
+  height: 40px;
+  padding-right: 14px;
   border-right: 1px solid #fff;
 }
 .main .nav-bar .links .icons .social {
   /* background: yellow; */
+  padding-top: 4px;
   height: 100%;
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 24px;
   color: #fff;
   margin-left: 10px;
   letter-spacing: 15px;
 }
 .home_section {
   width: 55%;
-  height: 450px;
+  height: 430px;
   position: absolute;
   left: 50%;
   top: 10%;
   display: flex;
   align-items: center;
   transform: translateX(-50%);
+  /* background-color: red; */
 }
 .home_section .img {
   width: 390px;
@@ -162,7 +174,7 @@
   justify-content: center;
 }
 .home_section .img img {
-  width: 430px;
+  width: 460px;
   height: 90%;
 }
 .home_section .content {
@@ -175,17 +187,19 @@
   color: #fff;
 }
 .home_section .content .items {
-  height: 50%;
+  height: 55%;
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  /* background-color: red; */
+  
 }
 .home_section .content .items h1 {
-  font-size: 38px;
-  line-height: 55px;
-  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 500;
 }
 .home_section .content .items a,
 .btn {
@@ -193,7 +207,7 @@
   color: #7fc9ff;
   padding: 10px 30px;
   border-radius: 30px;
-  margin-top: 25px;
+  margin-top: 30px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
@@ -214,7 +228,8 @@
 }
 .main .mid .mid_content .head {
   width: 100%;
-  height: 70px;
+  height: 86px;
+  padding-left: 8px;
 }
 .main .mid .mid_content .head h1 {
   font-family: var(--font);
@@ -226,6 +241,7 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 5px;
 }
 .main .mid .mid_content .cards .card {
   display: flex;
@@ -236,11 +252,13 @@
 }
 .main .mid .mid_content .cards .card .c_head {
   /* background: pink; */
+  padding-left: 5px;
   width: 100%;
 }
 .main .mid .mid_content .cards .card .c_head h3 {
   text-transform: uppercase;
   font-family: var(--font);
+  font-weight: 500;
   color: var(--color);
 }
 .main .mid .mid_content .cards .card .c_img {
@@ -252,12 +270,13 @@
   height: 90%;
 }
 .main .mid .mid_content .cards .card .c_para {
-  width: 100%;
+  width: 90%;
   height: 140px;
   color: #ffff;
-  font-size: 18px;
+  font-size: 1,6rem;
   font-family: var(--font);
   line-height: 30px;
+  /* background-color: aqua */
 }
 .main .mid .mid_content .cards .card .c_link {
   width: 100%;
@@ -276,13 +295,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background:red; */
 }
 .btn {
   font-family: var(--font);
+  margin:0;
 }
 .main .final {
   width: 100%;
-  height: 67vh;
+  min-height: 67vh;
   background: url("../images/footer_background.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -291,12 +312,13 @@
   justify-content: center;
 }
 .main .final .foot_link {
-  width: 52%;
+  width: 52vw;
   min-height: 400px;
 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* margin: auto; */
 }
 .main .final .foot_link .flink {
   width: 180px;
@@ -304,7 +326,6 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 .main .final .foot_link .end {
   width: 100%;
@@ -319,21 +340,20 @@
 .main .final .foot_link .flink .head {
   width: 100%;
   height: 70px;
-  /* background-color: green; */
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-family: var(--font);
   text-transform: uppercase;
+  padding-bottom: 18px;
   font-size: 14px;
   color: #fff;
 }
 .main .final .foot_link .flink .refs {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 100%;
-  /* background: navy; */
   height: 60%;
+  margin-top: 20px;
 }
 .main .final .foot_link .flink .head h3 {
   font-weight: 300;
@@ -343,6 +363,7 @@
   text-decoration: none;
   color:#fff;
   font-size:16px ;
+  margin-bottom: 10px;
   font-family: var(--font);
 }
 .main .final .foot_link .end p{
