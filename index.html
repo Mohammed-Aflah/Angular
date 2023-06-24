@@ -25,14 +25,14 @@
 
 <body>
     <main class="main">
-        <div class="header-part">
+        <div class="header-part" id="header-part">
         </div>
         <div class="nav-bar">
             <div class="logo_section">
                 <img src="./images/logo-with-text.png" alt="">
                 <a href="">Docs</a>
-                <a href="">Community</a>
-                <a href="">Blog <span class="material-symbols-outlined">
+                <a href="" style="margin-left: 18px;">Community</a>
+                <a href="" style="margin-left: 18px;">Blog <span class="material-symbols-outlined">
                         logout
                     </span></a>
             </div>
@@ -42,13 +42,13 @@
                     <span>/</span>
                 </div>
                 <div class="icons">
-                    <button><span class="material-symbols-outlined">
+                    <button id="light" ontoggle="tog()"><span class="material-symbols-outlined">
                             light_mode
                         </span></button>
                     <div class="social">
                         <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-square-github"></i>
-                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-youtube" style="font-size: 1.2rem;"></i>
                     </div>
                 </div>
             </div>
@@ -61,14 +61,14 @@
                 <div class="items">
 
                     <h1>Deliver web apps <br> with confidence</h1>
-                    <a href="">Try Angular</a>
+                    <a href="" id="lin">Try Angular</a>
                 </div>
             </div>
         </div>
         <div class="mid">
             <div class="mid_content">
                 <div class="head">
-                    <h1>The web development framework for building the future</h1>
+                    <h1 id="future">The web development framework for building the future</h1>
                 </div>
                 <div class="cards">
                     <div class="card card-1">
@@ -179,6 +179,21 @@
             </div>
         </footer>
     </main>
+    <script>
+        let header = document.getElementById("header-part")
+        let link = document.getElementById("lin")
+        let light_btn = document.getElementById("light")
+        let qoute = document.getElementById("future")
+        let main = document.querySelector(".main");
+        let middle = document.querySelector(".mid");
+        light_btn.addEventListener("click", () => {
+            link.style.background = "#ffffff";
+            header.style.background = "#3085d9";
+            qoute.style.color = "#333333";
+            main.style.background = "#ffffff";
+            middle.style.background = "#ffffff";
+        })
+    </script>
 </body>
 
 </html>
